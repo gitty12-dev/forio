@@ -3,6 +3,6 @@ import vue from '@vitejs/plugin-vue'
 
 // https://vitejs.dev/config/
 export default defineConfig({
-  base: 'YamatoForio', //追加
+  base: 'Forio', //追�?
   plugins: [vue()]
 })
