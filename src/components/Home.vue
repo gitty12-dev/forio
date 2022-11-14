@@ -1,13 +1,17 @@
-<script setup lang="ts">
+﻿<script setup lang="ts">
 
 </script>
 
 <template>
-	<header id="home" class="bg-warning">
-		<div class="title">Y.E Portfolio App</div>
+	<header id="home" class="f-flex justify-content-center align-items-center bg-warning">
+		<div id="title">Y.E Portfolio App</div>
 
+    <!-- TODO:ナビゲーション形式で表示する -->
 		<ul id="page-link">
-			<li><a href="#Skill">Slill</a></li>
+			<li><a href="#skill">Skill</a></li>
+			<li><a href="#works">Works</a></li>
+			<li><a href="#hobby">Hobby</a></li>
+			<li><a href="#contact">Contact</a></li>
 		</ul>
 	</header>
 
@@ -16,13 +20,20 @@
 
 <style scoped>
 #home {
-	height: 10rem;
+	/* height: 100px; */
+  padding: 0.5rem;
+}
+
+#title {
+  font-size: 2rem;
+  font-family: 'Anton';
+  text-align: left;
 }
 
 #page-link{
   display: flex;
-  justify-content: center;
-  padding: 20px;
+  justify-content: right;
+  padding: 1rem 0;
 }
 
 #page-link li{
@@ -39,6 +50,6 @@
   content: 'O';
   font-size: 0.8rem;
   padding: 0 10px 0 0;
-  color: #ccc;
+  color: #333;
 }
 </style>

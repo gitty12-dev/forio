@@ -12,8 +12,7 @@
   "dependencies": {
     "bootstrap": "^5.2.2",
     "gh-pages": "^4.0.0",
-    "vue": "^3.2.37",
-    "vue-scrollto": "^2.20.0"
+    "vue": "^3.2.37"
   },
   "devDependencies": {
     "@vitejs/plugin-vue": "^3.1.0",

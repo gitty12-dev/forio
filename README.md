@@ -18,7 +18,7 @@ In the maiking...
 # Usage
 
 Please check out the link below. See the link below.
-![Y.E Portforio App](https://gitty12-dev.github.io/forio/)
+https://gitty12-dev.github.io/forio/
 
 # Note
 

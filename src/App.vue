@@ -1,4 +1,4 @@
-<script setup lang="ts">
+﻿<script setup lang="ts">
 import Home from './components/Home.vue'
 import Profile from './components/Profile.vue'
 import Skill from './components/Skill.vue'

@@ -1,10 +1,14 @@
-<script setup lang="ts">
+﻿<script setup lang="ts">
 
 </script>
 
 <template>
 	<div id="works" class="d-flex justify-content-center align-items-center border">
-		<div>Works</div>
+		<h1>~ Works ~</h1>
+		<div class="d-flex flex-row">
+			
+
+		</div>
 	</div>
   
 </template>
