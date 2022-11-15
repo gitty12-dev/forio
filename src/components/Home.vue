@@ -10,7 +10,6 @@
 		<ul id="page-link">
 			<li><a href="#skill">Skill</a></li>
 			<li><a href="#works">Works</a></li>
-			<li><a href="#hobby">Hobby</a></li>
 			<li><a href="#contact">Contact</a></li>
 		</ul>
 	</header>
@@ -25,7 +24,7 @@
 }
 
 #title {
-  font-size: 2rem;
+  font-size: 2.5rem;
   font-family: 'Anton';
   text-align: left;
 }

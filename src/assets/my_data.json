@@ -1,0 +1,71 @@
+﻿{
+  "skill": [
+    {
+      "category": "backend",
+      "list": [{
+        "id" : 1,
+        "name" : "java",
+        "level" : 5
+      },{ 
+        "id" : 2,
+        "name" : "python",
+        "level" : 3
+      }]
+    },{
+      "category": "db",
+      "list": [{
+        "id" : 1,
+        "name" : "Oracle",
+        "level" : 5
+      },{ 
+        "id" : 2,
+        "name" : "Postgres",
+        "level" : 3
+      }]
+    },{
+      "category": "db2",
+      "list": [{
+        "id" : 1,
+        "name" : "Oracle",
+        "level" : 5
+      },{ 
+        "id" : 2,
+        "name" : "Postgres",
+        "level" : 3
+      },{ 
+        "id" : 3,
+        "name" : "Testgres",
+        "level" : 3
+      }]
+    },{
+      "category": "db3",
+      "list": [{
+        "id" : 1,
+        "name" : "Oracle",
+        "level" : 5
+      },{ 
+        "id" : 2,
+        "name" : "Postgres",
+        "level" : 3
+      }]
+    }
+  ],
+  "work": [
+    {
+      "title" : "Todo App for GAS",
+      "img"   : "/forio/src/assets/svg_icon.svg",
+      "url"   : "https://docs.google.com/spreadsheets/d/1URgeLmnpjEctlL-u-IfeGoayD4MrbxL73mviRlK7eoU/edit?usp=sharing",
+      "detail": "Google App Spreadsheets を用いて作成したTodo管理アプリです"
+    },{
+      "title" : "Sample1",
+      "img"   : "https://picsum.photos/id/123/300/300",
+      "url"   : "https://www.google.com/",
+      "detail": "Sample1です"
+    },{
+      "title" : "Sample2",
+      "img"   : "https://picsum.photos/id/237/300/300",
+      "url"   : "https://www.google.com/",
+      "detail": "Sample2です"
+    }
+  ]
+}
