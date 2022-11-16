@@ -24,9 +24,10 @@
 }
 
 #title {
-  font-size: 2.5rem;
+  font-size: 3rem;
   font-family: 'Anton';
   text-align: left;
+  margin-left: 1rem;
 }
 
 #page-link{
@@ -47,7 +48,6 @@
 
 #page-link li a::before{
   content: 'O';
-  font-size: 0.8rem;
   padding: 0 10px 0 0;
   color: #333;
 }
