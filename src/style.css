@@ -26,6 +26,11 @@ a:hover {
 p {
   font-size: 12px;
 }
+nav {
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0;
+}
 
 body {
   margin: 0;

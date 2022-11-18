@@ -6,12 +6,24 @@
 	<header id="home" class="f-flex justify-content-center align-items-center bg-warning">
 		<div id="title">Y.E Portfolio App</div>
 
-    <!-- TODO:ナビゲーション形式で表示する -->
-		<ul id="page-link">
-			<li><a href="#skill">Skill</a></li>
-			<li><a href="#works">Works</a></li>
-			<li><a href="#contact">Contact</a></li>
-		</ul>
+    <nav class="navbar navbar-expand">
+      <div class="d-flex justify-content-end collapse navbar-collapse">
+        <ul class="navbar-nav">
+          <li class="nav-item">
+            <a class="nav-link" href="#profile">Profile</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#skill">Skill</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#works">Works</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#contact">Contact</a>
+          </li>
+        </ul>
+      </div>
+    </nav>
 	</header>
 
   
@@ -30,25 +42,4 @@
   margin-left: 1rem;
 }
 
-#page-link{
-  display: flex;
-  justify-content: right;
-  padding: 1rem 0;
-}
-
-#page-link li{
-  list-style: none;
-}
-
-#page-link li a{
-  color: #333;
-  padding:0 20px;
-  text-decoration: none;
-}
-
-#page-link li a::before{
-  content: 'O';
-  padding: 0 10px 0 0;
-  color: #333;
-}
 </style>
