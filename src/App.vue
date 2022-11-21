@@ -4,6 +4,7 @@ import Profile from './components/Profile.vue'
 import Skill from './components/Skill.vue'
 import Works from './components/Works.vue'
 import Contact from './components/Contact.vue'
+import Footer from './components/Footer.vue'
 </script>
 
 <template>
@@ -13,12 +14,13 @@ import Contact from './components/Contact.vue'
     <Skill />
     <Works />
     <Contact />
+    <Footer />
   </main>
 </template>
 
 <style scoped>
 main {
-  background-color: rgb(207, 196, 182);
+  background-color: #FEF2E8;
   margin: 0.2rem;
 }
 </style>

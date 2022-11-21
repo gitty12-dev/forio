@@ -25,6 +25,7 @@ defineProps<Props>();
 <style scoped>
 #work {
 	height: auto;
+  padding: 0.5rem;
 }
 .work-title {
   font-size: 1.2rem;

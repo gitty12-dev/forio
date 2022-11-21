@@ -6,7 +6,7 @@ const skillss = json.skill;
 </script>
 
 <template>
-	<div id="skill" class="d-flex flex-column justify-content-center align-items-center border">
+	<div id="skill" class="d-flex flex-column justify-content-center align-items-center">
 		<h1>~ Skill ~</h1>
 		<!-- TODO:選択したら表示/非表示 切替できるようにする -->
 		<div class="skill-contents">
@@ -37,7 +37,7 @@ const skillss = json.skill;
 <style scoped>
 #skill {
 	/* height: 30rem; */
-	padding: 1rem;
+	padding: 3rem 0;
 }
 .skill-contents {
 	display: flex;

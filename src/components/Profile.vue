@@ -5,7 +5,7 @@ defineProps<{ job: string }>()
 </script>
 
 <template>
-	<div id="profile" class="d-flex flex-column border">
+	<div id="profile" class="d-flex flex-column">
 		<h1>~ Profile ~</h1>
 		<div class="d-flex flex-row align-items-center">
 			<img class="my-image" src="../assets/svg_icon.svg" alt="My logo" />
@@ -25,7 +25,7 @@ defineProps<{ job: string }>()
 <style scoped>
 #profile {
 	/* height: 12rem; */
-	padding: 1rem;
+	padding: 3rem 0;
 }
 .my-image {
 	width: 30%;

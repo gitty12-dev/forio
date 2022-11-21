@@ -3,11 +3,9 @@
 </script>
 
 <template>
-	<header id="home" class="f-flex justify-content-center align-items-center">
-		<div id="title">Y.E Portfolio App</div>
-
-    <nav class="navbar navbar-expand">
-      <div class="d-flex justify-content-end collapse navbar-collapse">
+	<footer id="footer" class="f-flex justify-content-center align-items-center">
+		<nav class="navbar navbar-expand">
+      <div class="d-flex justify-content-center collapse navbar-collapse">
         <ul class="navbar-nav">
           <li class="nav-item">
             <a class="nav-link" href="#profile">Profile</a>
@@ -24,23 +22,18 @@
         </ul>
       </div>
     </nav>
-	</header>
+    <div class="copyright">&copy; 2022 Gitty</div>
+	</footer>
 
   
 </template>
 
 <style scoped>
-#home {
+#footer {
 	/* height: 100px; */
   padding: 0.5rem;
-  background-color: #F97111;
 }
 
-#title {
-  font-size: 3rem;
-  font-family: 'Anton';
-  text-align: left;
-  margin-left: 1rem;
-}
+
 
 </style>

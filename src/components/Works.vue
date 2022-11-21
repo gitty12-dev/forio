@@ -6,7 +6,7 @@ const works = json.work;
 </script>
 
 <template>
-	<div id="works" class="d-flex flex-column justify-content-center align-items-center border">
+	<div id="works" class="d-flex flex-column justify-content-center align-items-center">
 		<h1>~ Works ~</h1>
 		<div class="work-contents">
 			<div v-for='work in works' class="work-div">
@@ -19,7 +19,7 @@ const works = json.work;
 <style scoped>
 #works {
 	/* height: 20rem; */
-	padding: 1rem;
+	padding: 3rem 0;
 }
 .work-contents {
 	display: flex;
