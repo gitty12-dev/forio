@@ -10,7 +10,7 @@ const skillss = json.skill;
 		<h1>~ Skill ~</h1>
 		<!-- TODO:選択したら表示/非表示 切替できるようにする -->
 		<div class="skill-contents">
-			<div v-for='skills in skillss' v-if='true' class="skill-table">
+			<div v-for="skills in skillss" v-if='true' class="skill-table">
 				<h2> {{ skills.category }} </h2>
 				<table class="table table-striped table-hover">
 					<thead>
@@ -20,9 +20,9 @@ const skillss = json.skill;
 							<th>level</th>
 						</tr>
 					</thead>
-					<tbody v-for='skill in skills.list'>
+					<tbody v-for="(skill, index) in skills.list">
 						<tr>
-							<th> {{ skill.id }}</th>
+							<th> {{ index + 1 }}</th>
 							<th> {{ skill.name }}</th>
 							<th> {{ skill.level }}</th>
 						</tr>

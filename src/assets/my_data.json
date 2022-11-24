@@ -3,91 +3,72 @@
     {
       "category": "フロントエンド",
       "list": [{
-        "id" : 1,
         "name" : "HTML/CSS",
         "level" : 5
       },{ 
-        "id" : 2,
         "name" : "JavaScript(TypeScript)",
         "level" : 3
       }]
     },{
       "category": "バックエンド",
       "list": [{
-        "id" : 1,
         "name" : "Java",
         "level" : 5
       },{ 
-        "id" : 2,
         "name" : "Python",
         "level" : 3
       },{ 
-        "id" : 3,
         "name" : "Go",
         "level" : 2
       },{ 
-        "id" : 4,
         "name" : "Excel VBA",
         "level" : 5
       },{ 
-        "id" : 5,
         "name" : "C++",
         "level" : 2
       }]
     },{
       "category": "データベース",
       "list": [{
-        "id" : 1,
         "name" : "Oracle",
         "level" : 5
       },{ 
-        "id" : 2,
         "name" : "Postgres",
         "level" : 3
       },{ 
-        "id" : 3,
         "name" : "MongoDB",
         "level" : 2
       }]
     },{
       "category": "フレームワーク",
       "list": [{ 
-        "id" : 1,
         "name" : "Bootstrap[CSS]",
         "level" : 3
       },{
-        "id" : 2,
         "name" : "Vue[JS]",
         "level" : 4
       },{ 
-        "id" : 3,
         "name" : "Spring Boot[Java]",
         "level" : 4
       }]
     },{
       "category": "業務範囲",
       "list": [{
-        "id" : 1,
         "name" : "要件定義",
         "level" : 2
       },{
-        "id" : 2,
         "name" : "基本設計",
         "level" : 3
       },{ 
-        "id" : 3,
         "name" : "詳細設計",
         "level" : 4
       },{ 
-        "id" : 4,
         "name" : "製造",
         "level" : 5
       },{ 
-        "id" : 5,
         "name" : "テスト",
         "level" : 4
       },{ 
-        "id" : 6,
         "name" : "運用保守",
         "level" : 5
       }]
