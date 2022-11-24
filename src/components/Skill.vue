@@ -1,6 +1,6 @@
 ﻿<script setup lang="ts">
 import json from '../assets/my_data.json'
-
+import Level from './parts/Level.vue'
 const skillss = json.skill;
 
 </script>
@@ -24,7 +24,7 @@ const skillss = json.skill;
 						<tr>
 							<th> {{ index + 1 }}</th>
 							<th> {{ skill.name }}</th>
-							<th> {{ skill.level }}</th>
+							<Level :level="skill.level" />
 						</tr>
 					</tbody>
 				</table>
