@@ -1,29 +1,12 @@
 ﻿<script setup lang="ts">
-
+import Navvar from './parts/Navvar.vue'
 </script>
 
 <template>
 	<header id="home" class="f-flex justify-content-center align-items-center">
 		<div id="title">Y.E Portfolio App</div>
-
-    <nav class="navbar navbar-expand">
-      <div class="d-flex justify-content-end collapse navbar-collapse">
-        <ul class="navbar-nav">
-          <li class="nav-item">
-            <a class="nav-link" href="#profile">Profile</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#skill">Skill</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#works">Works</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#contact">Contact</a>
-          </li>
-        </ul>
-      </div>
-    </nav>
+    <Navvar position="justify-content-end"/>
+    
 	</header>
 
   
