@@ -1,33 +1,40 @@
 ﻿<script setup lang="ts">
+import { ref } from 'vue';
 import json from '../assets/my_data.json'
 import Level from './parts/Level.vue'
 const skillss = json.skill;
 
+const isCategory = ref(false);
+
+const showCategory = () => {
+	isCategory.value = isCategory.value ? false : true;
+} 
 </script>
 
 <template>
 	<div id="skill" class="d-flex flex-column justify-content-center align-items-center">
 		<h1><img class="icon-title" src="../assets/icon_skill.svg"/>Skill</h1>
-		<!-- TODO:選択したら表示/非表示 切替できるようにする -->
 		<div class="skill-contents">
-			<div v-for="skills in skillss" v-if='true' class="skill-table">
-				<h2> {{ skills.category }} </h2>
-				<table class="table table-striped table-hover">
-					<thead>
-						<tr>
-							<th>No</th>
-							<th>language</th>
-							<th>level</th>
-						</tr>
-					</thead>
-					<tbody v-for="(skill, index) in skills.list">
-						<tr>
-							<th> {{ index + 1 }}</th>
-							<th> {{ skill.name }}</th>
-							<Level :level="skill.level" />
-						</tr>
-					</tbody>
-				</table>
+			<div v-for="skills in skillss" class="skill-table border rounded">
+				<a class="btn" @click="showCategory"><h2>{{ skills.category }}</h2></a>
+				<div v-if="isCategory">
+					<table class="table table-striped table-hover">
+						<thead>
+							<tr>
+								<th>No</th>
+								<th>language</th>
+								<th>level</th>
+							</tr>
+						</thead>
+						<tbody v-for="(skill, index) in skills.list">
+							<tr>
+								<th> {{ index + 1 }}</th>
+								<th> {{ skill.name }}</th>
+								<Level :level="skill.level" />
+							</tr>
+						</tbody>
+					</table>
+				</div>
 			</div>
 		</div>
 	</div>
@@ -47,7 +54,10 @@ const skillss = json.skill;
 }
 .skill-table {
   width: calc(100% / 2 - 0.5rem);
+	border: 1px;
+
 	margin-bottom: 1rem;
+	padding: 0.2rem;
 }
 
 @media screen and (max-width:480px) {
