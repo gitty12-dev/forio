@@ -7,7 +7,7 @@ const skillss = json.skill;
 
 <template>
 	<div id="skill" class="d-flex flex-column justify-content-center align-items-center">
-		<h1>~ Skill ~</h1>
+		<h1><img class="icon-title" src="../assets/icon_skill.svg"/>Skill</h1>
 		<!-- TODO:選択したら表示/非表示 切替できるようにする -->
 		<div class="skill-contents">
 			<div v-for="skills in skillss" v-if='true' class="skill-table">

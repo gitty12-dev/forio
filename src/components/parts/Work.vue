@@ -15,7 +15,7 @@ defineProps<Props>();
 </script>
 
 <template>
-	<div id="work" class="d-flex flex-column justify-content-center align-items-center border">
+	<div id="work" class="d-flex flex-column justify-content-center align-items-center">
     <div class="work-title">{{item.title}}</div>
     <a :href="item.url"><img class="work-img" :src="item.img" /></a>
     <p class="work-detail">{{item.detail}}</p>

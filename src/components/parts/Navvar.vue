@@ -29,4 +29,7 @@ defineProps<Props>();
 </template>
 
 <style scoped>
+ul li a {
+  color: #285943;
+}
 </style>

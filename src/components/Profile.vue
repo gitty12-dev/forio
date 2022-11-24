@@ -6,7 +6,7 @@ defineProps<{ job: string }>()
 
 <template>
 	<div id="profile" class="d-flex flex-column">
-		<h1>~ Profile ~</h1>
+		<h1><img class="icon-title" src="../assets/icon_profile.svg"/>Profile</h1>
 		<div class="d-flex flex-row align-items-center">
 			<img class="my-image" src="../assets/svg_icon.svg" alt="My logo" />
 			<div class="my-detail d-flex flex-column">

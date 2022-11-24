@@ -20,7 +20,6 @@ import Footer from './components/Footer.vue'
 
 <style scoped>
 main {
-  background-color: #FEF2E8;
   margin: 0.2rem;
 }
 </style>
