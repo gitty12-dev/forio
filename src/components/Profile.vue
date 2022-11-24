@@ -10,7 +10,7 @@ defineProps<{ job: string }>()
 		<div class="d-flex flex-row align-items-center">
 			<img class="my-image" src="../assets/svg_icon.svg" alt="My logo" />
 			<div class="my-detail d-flex flex-column">
-				<span class="fs-5 pb-1"> Job:{{ job }} </span>
+				<span class="fs-5 pb-1"> 職業：{{ job }} </span>
 				<p>はじめまして、システムエンジニアの"Gitty"と申します。IT業界での社会人歴は5年目です。<br>
 					新卒では中小企業の受託開発企業に入社し、現在はフリーランスエンジニアとして、
 					設計～開発・運用保守など幅広いITスキルを基に、フルスタックエンジニアを目指して日々精進しております。
@@ -25,7 +25,7 @@ defineProps<{ job: string }>()
 <style scoped>
 #profile {
 	/* height: 12rem; */
-	padding: 3rem 0;
+	padding-top: 3rem;
 }
 .my-image {
 	width: 30%;

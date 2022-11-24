@@ -16,7 +16,7 @@ defineProps<Props>();
 
 <template>
 	<div id="work" class="d-flex flex-column justify-content-center align-items-center">
-    <div class="work-title">{{item.title}}</div>
+    <h2 class="work-title">{{item.title}}</h2>
     <a :href="item.url"><img class="work-img" :src="item.img" /></a>
     <p class="work-detail">{{item.detail}}</p>
   </div>
@@ -28,8 +28,7 @@ defineProps<Props>();
   padding: 0.5rem;
 }
 .work-title {
-  font-size: 1.2rem;
-  padding: 1rem 0;
+  padding-bottom: 0.5rem;
 }
 .work-img {
   height: 50px;

@@ -81,7 +81,7 @@
       "url"   : "https://github.com/gitty12-dev/forio",
       "detail": "↑GitHubページ。Vue.js を用いて作成した、僕のポートフォリオサイトです。"
     },{
-      "title" : "Todoアプリ for GAS",
+      "title" : "Todoアプリ",
       "img"   : "/forio/src/assets/svg_icon.svg",
       "url"   : "https://docs.google.com/spreadsheets/d/1URgeLmnpjEctlL-u-IfeGoayD4MrbxL73mviRlK7eoU/edit?usp=sharing",
       "detail": "Google App Spreadsheets を用いて作成したTodo管理アプリです。"

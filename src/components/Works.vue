@@ -1,8 +1,8 @@
 ﻿<script setup lang="ts">
 import Work from './parts/Work.vue'
 import json from '../assets/my_data.json'
-
 const works = json.work;
+
 </script>
 
 <template>
@@ -19,7 +19,7 @@ const works = json.work;
 <style scoped>
 #works {
 	/* height: 20rem; */
-	padding: 3rem 0;
+	padding-top: 3rem;
 }
 .work-contents {
 	display: flex;

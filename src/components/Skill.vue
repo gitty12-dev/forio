@@ -37,7 +37,7 @@ const skillss = json.skill;
 <style scoped>
 #skill {
 	/* height: 30rem; */
-	padding: 3rem 0;
+	padding-top: 3rem;
 }
 .skill-contents {
 	display: flex;

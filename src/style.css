@@ -17,6 +17,7 @@
 h1 {
   color: #285943;
   align-items: center;
+  padding-bottom: 0.5rem;
 }
 p {
   font-size: 14px;

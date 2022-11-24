@@ -15,7 +15,7 @@
 <style scoped>
 #contact {
 	/* height: 100px; */
-  padding: 0.5rem;
+  padding-top: 3rem;
 }
 .twitter { 
 	margin: 1.0rem 0;
