@@ -4,10 +4,14 @@ import json from '../assets/my_data.json'
 import Level from './parts/Level.vue'
 const skillss = json.skill;
 
-const isCategory = ref(false);
-
-const showCategory = () => {
-	isCategory.value = isCategory.value ? false : true;
+const isTabletWidth = window.matchMedia('(max-width:740px)').matches;
+const isCategory = isTabletWidth ?
+										ref([...Array(4)].map(v => false)):
+										ref([...Array(4)].map(v => true));
+const showCategory = (idx: number) => {
+	if (isTabletWidth) {
+		isCategory.value[idx] = isCategory.value[idx] ? false : true;
+	}
 } 
 </script>
 
@@ -15,9 +19,11 @@ const showCategory = () => {
 	<div id="skill" class="d-flex flex-column justify-content-center align-items-center">
 		<h1><img class="icon-title" src="../assets/icon_skill.svg"/>Skill</h1>
 		<div class="skill-contents">
-			<div v-for="skills in skillss" class="skill-table border rounded">
-				<a class="btn" @click="showCategory"><h2>{{ skills.category }}</h2></a>
-				<div v-if="isCategory">
+			<div v-for='(skills,index) in skillss' class="skill-table border rounded">
+				<a class="btn skill-button" @click="showCategory(index)">
+					<h2>{{ skills.category }}</h2>
+				</a>
+				<div v-if="isCategory[index]">
 					<table class="table table-striped table-hover">
 						<thead>
 							<tr>
@@ -54,15 +60,24 @@ const showCategory = () => {
 }
 .skill-table {
   width: calc(100% / 2 - 0.5rem);
-	border: 1px;
-
 	margin-bottom: 1rem;
 	padding: 0.2rem;
 }
+.skill-button {
+	width: 100%;
+	pointer-events: none;
+}
 
-@media screen and (max-width:480px) {
+@media screen and (max-width:740px) {
 	.skill-table {
 		width: calc(100% - 1.5rem);
+		box-shadow: 5px 5px 5px #77AF9C;
+	}
+	.skill-button {
+		pointer-events: all;
+	}
+	.skill-button h2 {
+		margin: 0;
 	}
 }
 
