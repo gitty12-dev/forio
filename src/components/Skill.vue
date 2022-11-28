@@ -6,8 +6,8 @@ const skillss = json.skill;
 
 const isTabletWidth = window.matchMedia('(max-width:740px)').matches;
 const isCategory = isTabletWidth ?
-										ref([...Array(4)].map(v => false)):
-										ref([...Array(4)].map(v => true));
+										ref([...Array(skillss.length)].map(v => false)):
+										ref([...Array(skillss.length)].map(v => true));
 const showCategory = (idx: number) => {
 	if (isTabletWidth) {
 		isCategory.value[idx] = isCategory.value[idx] ? false : true;
@@ -19,7 +19,7 @@ const showCategory = (idx: number) => {
 	<div id="skill" class="d-flex flex-column justify-content-center align-items-center">
 		<h1><img class="icon-title" src="../assets/icon_skill.svg"/>Skill</h1>
 		<div class="skill-contents">
-			<div v-for='(skills,index) in skillss' class="skill-table border rounded">
+			<div v-for='(skills,index) in skillss' class="skill-table">
 				<a class="btn skill-button" @click="showCategory(index)">
 					<h2>{{ skills.category }}</h2>
 				</a>
@@ -60,6 +60,10 @@ const showCategory = (idx: number) => {
 }
 .skill-table {
   width: calc(100% / 2 - 0.5rem);
+	border: 1px solid;
+	border-color: #77AF9C;
+	border-radius: 4px;
+	box-shadow: 3px 3px 3px #77AF9C;
 	margin-bottom: 1rem;
 	padding: 0.2rem;
 }
@@ -70,8 +74,8 @@ const showCategory = (idx: number) => {
 
 @media screen and (max-width:740px) {
 	.skill-table {
+		font-size: 14px;
 		width: calc(100% - 1.5rem);
-		box-shadow: 5px 5px 5px #77AF9C;
 	}
 	.skill-button {
 		pointer-events: all;
