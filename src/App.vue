@@ -1,4 +1,5 @@
 ﻿<script setup lang="ts">
+import Top from './components/Top.vue'
 import Home from './components/Home.vue'
 import Profile from './components/Profile.vue'
 import Skill from './components/Skill.vue'
@@ -9,6 +10,7 @@ import Footer from './components/Footer.vue'
 
 <template>
   <main>
+    <Top />
     <Home />
     <Profile job="System Engineer" />
     <Skill />
