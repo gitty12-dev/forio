@@ -2,32 +2,43 @@
 import { ref } from 'vue';
 import gsap from 'gsap'
 
+// 【0.共通】
+const moveTopPage = () => {
+  window.scrollTo({top: 0, behavior:'smooth'});
+}
+
+
+// 【1.初期画面設定】
 const isTop = ref(true);
 const lines = ref([{ phrase: "Y.E" },{ phrase: "Portforio" },{ phrase: "App" }]);
+
 // テキストの初期状態
 const textBeforeEnter = (el:any) => {
   gsap.set(el, {
     y: "-100%",
     opacity: 0
-  })
+  });
 };
 
 // テキストが上から下へ移動するアニメーション
 const textEnter = (el:any) => {
+  gsap.to(el, {
+    onStart: moveTopPage
+  });
   gsap.to(el, {
     opacity: 1,
     duration: 0.3,
     y: "0",
     ease: "bounce.out",
     // テキストを0.4秒ずつずらして上から下へ移動
-    delay: 1 + 0.4 * (lines.value.length - el.dataset.index),
+    delay: 0.5 + 0.4 * (lines.value.length - el.dataset.index),
   });
   gsap.to(".top-back", {
     opacity: 0,
     duration: 1,
     y: "0",
     ease: "ease",
-    delay: 3,
+    delay: 2.5,
     onComplete: afterTextEnter,
   });
 }
@@ -52,13 +63,13 @@ const afterTextEnter = (el:any) => {
 
 <style scoped>
 .top-back {
-	background: rgba(255,255,255,0.9);
+	background: rgba(255,255,255,1);
 	position: fixed;
 	inset: 0;
   margin: auto;
 	height: 100%;
 	width: 100%;
-	z-index: 9000;
+	z-index: 8000;
 
   display: flex;
   flex-direction: column;
@@ -70,5 +81,4 @@ const afterTextEnter = (el:any) => {
   width: 100%;
   color: black;
 }
-
 </style>
