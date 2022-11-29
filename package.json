@@ -12,6 +12,7 @@
   "dependencies": {
     "bootstrap": "^5.2.2",
     "gh-pages": "^4.0.0",
+    "gsap": "^3.11.3",
     "vue": "^3.2.37",
     "vue-scrollto": "^2.20.0"
   },

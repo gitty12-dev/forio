@@ -1,65 +1,74 @@
 ﻿<script setup lang="ts">
 import { ref } from 'vue';
+import gsap from 'gsap'
 
-const topBackShow = ref(true);
-const topLogoShow = ref(false);
+const isTop = ref(true);
+const lines = ref([{ phrase: "Y.E" },{ phrase: "Portforio" },{ phrase: "App" }]);
+// テキストの初期状態
+const textBeforeEnter = (el:any) => {
+  gsap.set(el, {
+    y: "-100%",
+    opacity: 0
+  })
+};
 
-async function sleep(ms: number) {
-  return new Promise((resolve) => setTimeout(resolve, ms));
+// テキストが上から下へ移動するアニメーション
+const textEnter = (el:any) => {
+  gsap.to(el, {
+    opacity: 1,
+    duration: 0.3,
+    y: "0",
+    ease: "bounce.out",
+    // テキストを0.4秒ずつずらして上から下へ移動
+    delay: 1 + 0.4 * (lines.value.length - el.dataset.index),
+  });
+  gsap.to(".top-back", {
+    opacity: 0,
+    duration: 1,
+    y: "0",
+    ease: "ease",
+    delay: 3,
+    onComplete: afterTextEnter,
+  });
 }
 
-async function openPage() {
-  await new Promise((resolve) => setTimeout(resolve, 1));
-  topLogoShow.value = true // タイトル文字表示
-  await new Promise((resolve) => setTimeout(resolve, 2000));
-  topLogoShow.value = false // タイトル文字表示
-  topBackShow.value = false // タイトル文字表示
+const afterTextEnter = (el:any) => {
+  isTop.value = false;
 }
-
-openPage();
-
 </script>
 
 <template>
-  <transition>
-    <div v-if="topBackShow" class="start">
-      <!-- <p><img src="../assets/svg_icon.svg" alt=""></p> -->
-      <transition>
-        <p v-if="topLogoShow">test aaaaaaaaaaaaaaaaaaaaaaaaaaaa</p>
-      </transition>
+  <transition-group tag="div" appear
+    @before-enter="textBeforeEnter"
+    @enter="textEnter"
+    class="top-back" v-show="isTop">
+    <div v-for="(line, index) in lines" :key="line.phrase" class="top-phrase" :data-index="index">
+      <div> 
+          {{ line.phrase }}
+      </div>
     </div>
-  </transition>
+  </transition-group>
 </template>
 
 <style scoped>
-.start {
-	background: rgba(255,255,255,0.8);
+.top-back {
+	background: rgba(255,255,255,0.9);
 	position: fixed;
-	top: 0;
-	left: 0;
+	inset: 0;
+  margin: auto;
 	height: 100%;
 	width: 100%;
 	z-index: 9000;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 }
-.start p {
+.top-phrase {
+  font-size: 4rem;
+  font-family: 'Anton';
+  width: 100%;
   color: black;
-	position: fixed;
-	left: 50%;
-	top: 50%;
-	transform: translate(-50%, -50%);
-	/* display: none; */
-	z-index: 9999;
-	width: 280px;
 }
 
-.v-enter-active{
-  transition: opacity 2s ease;
-}
-.v-leave-active {
-  transition: opacity 4s ease;
-}
-
-.v-enter-from, .v-leave-to {
-  opacity: 0;
-}
 </style>
