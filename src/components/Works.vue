@@ -30,11 +30,12 @@ const works = json.work;
 .work-div {
   width: calc(100% / 3 - 0.2rem);
 	margin-bottom: 1rem;
+	padding-bottom: 0.5rem;
 }
-
-@media screen and (max-width:480px) {
+@media screen and (max-width:740px) {
 	.work-div {
-		width: calc(100% / 2 - 0.5rem);
+		width: calc(100% - 1rem);
+		margin: 0 1rem;
 	}
 }
 </style>

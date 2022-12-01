@@ -8,8 +8,10 @@ defineProps<{ job: string }>()
 	<div id="profile" class="d-flex flex-column">
 		<h1><img class="icon-title" src="../assets/icon_profile.svg"/>Profile</h1>
 		<div class="d-flex flex-row align-items-center">
-			<img class="my-image" src="../assets/svg_icon.svg" alt="My logo" />
-			<div class="my-detail d-flex flex-column">
+			<div class="my-image-dev">
+				<img class="my-image" src="../assets/my_image.png" alt="My logo" />
+			</div>
+			<div class="my-detail-div d-flex flex-column">
 				<span class="fs-5 pb-1"> 職業：{{ job }} </span>
 				<p>はじめまして、システムエンジニアの"Gitty"と申します。IT業界での社会人歴は5年目です。<br>
 					新卒では中小企業の受託開発企業に入社し、現在はフリーランスエンジニアとして、
@@ -27,12 +29,23 @@ defineProps<{ job: string }>()
 	/* height: 12rem; */
 	padding-top: 3rem;
 }
-.my-image {
-	width: 30%;
-	height: 50px;
+.my-image-dev {
+	width: 20%;
 }
-.my-detail {
-	width: 70%;
+.my-image {
+	height: auto;
+	width: 90%;	
+}
+.my-detail-div {
+	width: 80%;
 	text-align: left;
+}
+@media screen and (max-width:740px) {
+	.my-image-dev {
+		width: 30%;
+	}
+	.my-detail-div {
+		width: 70%;
+	}
 }
 </style>

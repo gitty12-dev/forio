@@ -15,7 +15,7 @@ defineProps<Props>();
 </script>
 
 <template>
-	<div id="work" class="d-flex flex-column justify-content-center align-items-center">
+	<div id="work" class="d-flex flex-column justify-content-center align-items-center border">
     <h2 class="work-title">{{item.title}}</h2>
     <a :href="item.url"><img class="work-img" :src="item.img" /></a>
     <p class="work-detail">{{item.detail}}</p>
@@ -32,5 +32,10 @@ defineProps<Props>();
 }
 .work-img {
   height: 50px;
+}
+@media screen and (max-width:740px) {
+	.work-detail {
+		padding: 0 2rem;
+	}
 }
 </style>
