@@ -31,7 +31,7 @@ const textEnter = (el:any) => {
     y: "0",
     ease: "bounce.out",
     // テキストを0.4秒ずつずらして上から下へ移動
-    delay: 0.5 + 0.4 * (lines.value.length - el.dataset.index),
+    delay: 0.8 + 0.4 * (el.dataset.index),
   });
   gsap.to(".top-back", {
     opacity: 0,
@@ -43,7 +43,7 @@ const textEnter = (el:any) => {
   });
 }
 
-const afterTextEnter = (el:any) => {
+const afterTextEnter = () => {
   isTop.value = false;
 }
 </script>

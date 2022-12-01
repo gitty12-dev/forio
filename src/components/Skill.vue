@@ -74,7 +74,7 @@ const showCategory = (idx: number) => {
 
 @media screen and (max-width:740px) {
 	.skill-table {
-		font-size: 14px;
+		font-size: 12px;
 		width: calc(100% - 1.5rem);
 	}
 	.skill-button {
