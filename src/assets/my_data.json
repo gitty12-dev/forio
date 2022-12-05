@@ -79,12 +79,12 @@
       "title" : "ポートフォリオ",
       "img"   : "https://picsum.photos/id/123/300/300",
       "url"   : "https://github.com/gitty12-dev/forio",
-      "detail": "↑GitHubページ。Vue.js を用いて作成した、僕のポートフォリオサイトです。"
+      "detail": "GitHubページ。Vue.jsメインで作成した、このポートフォリオサイトです(作成中です...)"
     },{
       "title" : "Todoアプリ",
-      "img"   : "/forio/src/assets/svg_icon.svg",
+      "img"   : "https://picsum.photos/id/124/300/300",
       "url"   : "https://docs.google.com/spreadsheets/d/1URgeLmnpjEctlL-u-IfeGoayD4MrbxL73mviRlK7eoU/edit?usp=sharing",
-      "detail": "Google App Spreadsheets を用いて作成したTodo管理アプリです。"
+      "detail": "Google App Spreadsheetsを用いて作成したTodo管理アプリです(PCのみスクリプト実行可能)"
     },{
       "title" : "Coming soon...",
       "img"   : "https://picsum.photos/id/237/300/300",
