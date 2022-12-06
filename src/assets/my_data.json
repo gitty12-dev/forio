@@ -1,4 +1,12 @@
 ﻿{
+  "tech": [
+    "https://user-images.githubusercontent.com/39142850/71645835-a98d4580-2d21-11ea-9693-348d12101bb4.png",
+    "https://user-images.githubusercontent.com/28287802/205848845-1c36e35b-404a-4153-96b7-a6a5c1cd2e23.svg",
+    "https://user-images.githubusercontent.com/28287802/205849769-62d4dff2-9ee5-4181-a4ad-30c89ff7b7a7.png",
+    "https://user-images.githubusercontent.com/28287802/205863078-0fce7559-a58b-438e-b7d8-b93b8d61d975.png",
+    "https://user-images.githubusercontent.com/28287802/205864173-034d4e36-192e-4b13-9730-256287cea95d.png",
+    "https://user-images.githubusercontent.com/28287802/205864685-616f1a60-948c-4861-8cf0-9783874e3c05.png"
+  ],
   "skill": [
     {
       "category": "フロントエンド",
