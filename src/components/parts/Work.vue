@@ -33,9 +33,13 @@ defineProps<Props>();
 .work-img {
   height: 50px;
 }
+.work-detail {
+  padding-top: 0.5rem;
+}
+
 @media screen and (max-width:740px) {
 	.work-detail {
-		padding: 0 2rem;
+		padding: 0.5rem 2rem 0 2rem;
 	}
 }
 </style>
