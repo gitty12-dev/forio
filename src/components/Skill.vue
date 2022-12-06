@@ -17,7 +17,7 @@ const showCategory = (idx: number) => {
 
 <template>
 	<div id="skill" class="d-flex flex-column justify-content-center align-items-center">
-		<h1><img class="icon-title" src="../assets/icon_skill.svg"/>Skill</h1>
+		<h1><img class="icon-title" src="../assets/icon/icon_skill.svg"/>Skill</h1>
 		<div class="skill-contents">
 			<div v-for='(skills,index) in skillss' class="skill-table">
 				<a class="btn skill-button" @click="showCategory(index)">

@@ -6,10 +6,10 @@ defineProps<{ job: string }>()
 
 <template>
 	<div id="profile" class="d-flex flex-column">
-		<h1><img class="icon-title" src="../assets/icon_profile.svg"/>Profile</h1>
+		<h1><img class="icon-title" src="../assets/icon/icon_profile.svg"/>Profile</h1>
 		<div class="profile-contents">
 			<div class="my-image-div">
-				<img src="../assets/my_image.png" alt="My logo" />
+				<img src="../assets/img/my_image.png" alt="My logo" />
 			</div>
 			<div class="my-detail-div d-flex flex-column">
 				<span class="fs-5 pb-1"> 職業：{{ job }} </span>

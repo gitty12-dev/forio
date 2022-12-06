@@ -4,9 +4,9 @@
 
 <template>
 	<div id="contact" class="d-flex flex-column justify-content-center">
-		<h1><img class="icon-title" src="../assets/icon_contact.svg"/>Contact</h1>
+		<h1><img class="icon-title" src="../assets/icon/icon_contact.svg"/>Contact</h1>
 		<div class="twitter">
-			<a href="https://twitter.com/P0_ToF"><img class="twitter-img" src="../assets/twitter_icons_blue.svg" /></a>
+			<a href="https://twitter.com/P0_ToF"><img class="twitter-img" src="../assets/icon/icon_twitter_blue.svg" /></a>
 		</div>
 	</div>
   

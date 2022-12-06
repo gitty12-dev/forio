@@ -7,7 +7,7 @@ const works = json.work;
 
 <template>
 	<div id="works" class="d-flex flex-column justify-content-center align-items-center">
-		<h1><img class="icon-title" src="../assets/icon_works.svg"/>Works</h1>
+		<h1><img class="icon-title" src="../assets/icon/icon_works.svg"/>Works</h1>
 		<div class="work-contents">
 			<div v-for='work in works' class="work-div">
 				<Work :item=work />
