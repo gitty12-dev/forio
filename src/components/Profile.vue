@@ -19,7 +19,7 @@ defineProps<{ job: string }>()
 					設計～開発・運用保守など幅広いITスキルを基に、フルスタックエンジニアを目指して日々精進しております。
 					(2022年12月6日更新)
 				</p>
-				<div class="d-flex flex-row justify-content-center">
+				<div class="my-tech-list">
 					<div v-for='tech in techs' class="my-tech">
 						<img :src="tech"/>
 					</div>
@@ -56,10 +56,16 @@ defineProps<{ job: string }>()
 	width: 60%;
 	text-align: left;
 }
+.my-tech-list {
+	display: flex;
+  flex-wrap: wrap;
+	flex-direction: row;
+	justify-content: center;
+}
 .my-tech img {
 	height: 50px;
 	width: auto;
-	padding: 0 0.2rem;
+	padding: 0.1rem 0.2rem;
 }
 @media screen and (max-width:740px) {
 	.my-image-div {
