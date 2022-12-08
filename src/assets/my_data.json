@@ -91,14 +91,9 @@
       "detail": "GitHubページ。Vue.jsメインで作成した、このポートフォリオサイトです(作成中です...)"
     },{
       "title" : "Todoアプリ",
-      "img"   : "svg_icon.svg",
+      "img"   : "work_todo.png",
       "url"   : "https://docs.google.com/spreadsheets/d/1URgeLmnpjEctlL-u-IfeGoayD4MrbxL73mviRlK7eoU/edit?usp=sharing",
       "detail": "Google App Spreadsheetsを用いて作成したTodo管理アプリです(PCのみスクリプト実行可能)"
-    },{
-      "title" : "Coming soon...",
-      "img"   : "svg_icon.svg",
-      "url"   : "https://www.google.com/",
-      "detail": "現在作成中..."
     }
   ]
 }
