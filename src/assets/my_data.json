@@ -1,99 +1,159 @@
 ﻿{
-  "tech": [
-    "https://user-images.githubusercontent.com/28287802/206342829-b30c7dc7-f615-4848-945b-cd0c14d27752.png",
-    "https://user-images.githubusercontent.com/28287802/205863078-0fce7559-a58b-438e-b7d8-b93b8d61d975.png",
-    "https://user-images.githubusercontent.com/28287802/205849769-62d4dff2-9ee5-4181-a4ad-30c89ff7b7a7.png",
-    "https://user-images.githubusercontent.com/28287802/205848845-1c36e35b-404a-4153-96b7-a6a5c1cd2e23.svg",
-    "https://user-images.githubusercontent.com/39142850/71645835-a98d4580-2d21-11ea-9693-348d12101bb4.png",
-    "https://user-images.githubusercontent.com/28287802/205864173-034d4e36-192e-4b13-9730-256287cea95d.png",
-    "https://user-images.githubusercontent.com/28287802/205864685-616f1a60-948c-4861-8cf0-9783874e3c05.png"
-  ],
-  "skill": [
-    {
-      "category": "フロントエンド",
-      "list": [{
-        "name" : "HTML/CSS",
-        "level" : 5
-      },{ 
-        "name" : "JavaScript(TypeScript)",
-        "level" : 3
-      }]
-    },{
-      "category": "バックエンド",
-      "list": [{
-        "name" : "Java",
-        "level" : 5
-      },{ 
-        "name" : "Python",
-        "level" : 3
-      },{ 
-        "name" : "Go",
-        "level" : 2
-      },{ 
-        "name" : "Excel VBA",
-        "level" : 5
-      },{ 
-        "name" : "C++",
-        "level" : 2
-      }]
-    },{
-      "category": "データベース",
-      "list": [{
-        "name" : "Oracle",
-        "level" : 5
-      },{ 
-        "name" : "Postgres",
-        "level" : 3
-      },{ 
-        "name" : "MongoDB",
-        "level" : 2
-      }]
-    },{
-      "category": "フレームワーク",
-      "list": [{ 
-        "name" : "Bootstrap[CSS]",
-        "level" : 3
-      },{
-        "name" : "Vue[JS]",
-        "level" : 4
-      },{ 
-        "name" : "Spring Boot[Java]",
-        "level" : 4
-      }]
-    },{
-      "category": "業務範囲",
-      "list": [{
-        "name" : "要件定義",
-        "level" : 2
-      },{
-        "name" : "基本設計",
-        "level" : 3
-      },{ 
-        "name" : "詳細設計",
-        "level" : 4
-      },{ 
-        "name" : "製造",
-        "level" : 5
-      },{ 
-        "name" : "テスト",
-        "level" : 4
-      },{ 
-        "name" : "運用保守",
-        "level" : 5
-      }]
-    }
-  ],
-  "work": [
-    {
-      "title" : "ポートフォリオ",
-      "img"   : "svg_icon.svg",
-      "url"   : "https://github.com/gitty12-dev/forio",
-      "detail": "GitHubページ。Vue.jsメインで作成した、このポートフォリオサイトです(作成中です...)"
-    },{
-      "title" : "Todoアプリ",
-      "img"   : "work_todo.png",
-      "url"   : "https://docs.google.com/spreadsheets/d/1URgeLmnpjEctlL-u-IfeGoayD4MrbxL73mviRlK7eoU/edit?usp=sharing",
-      "detail": "Google App Spreadsheetsを用いて作成したTodo管理アプリです(PCのみスクリプト実行可能)"
-    }
-  ]
+	"tech": [
+		"https://user-images.githubusercontent.com/28287802/206342829-b30c7dc7-f615-4848-945b-cd0c14d27752.png",
+		"https://user-images.githubusercontent.com/28287802/205863078-0fce7559-a58b-438e-b7d8-b93b8d61d975.png",
+		"https://user-images.githubusercontent.com/28287802/205849769-62d4dff2-9ee5-4181-a4ad-30c89ff7b7a7.png",
+		"https://user-images.githubusercontent.com/28287802/205848845-1c36e35b-404a-4153-96b7-a6a5c1cd2e23.svg",
+		"https://user-images.githubusercontent.com/39142850/71645835-a98d4580-2d21-11ea-9693-348d12101bb4.png",
+		"https://user-images.githubusercontent.com/28287802/205864173-034d4e36-192e-4b13-9730-256287cea95d.png",
+		"https://user-images.githubusercontent.com/28287802/205864685-616f1a60-948c-4861-8cf0-9783874e3c05.png"
+	],
+	"skill": [
+		{
+			"category": "フロントエンド",
+			"list": [
+				{
+					"name": "HTML/CSS",
+					"level": 5
+				},
+				{
+					"name": "JavaScript(TypeScript)",
+					"level": 3
+				}
+			]
+		},
+		{
+			"category": "バックエンド",
+			"list": [
+				{
+					"name": "Java",
+					"level": 5
+				},
+				{
+					"name": "Excel VBA",
+					"level": 5
+				},
+				{
+					"name": "Python",
+					"level": 3
+				},
+				{
+					"name": "Go",
+					"level": 2
+				},
+				{
+					"name": "C++",
+					"level": 2
+				}
+			]
+		},
+		{
+			"category": "データベース",
+			"list": [
+				{
+					"name": "Oracle",
+					"level": 5
+				},
+				{
+					"name": "Postgres",
+					"level": 3
+				},
+				{
+					"name": "MongoDB",
+					"level": 2
+				}
+			]
+		},
+		{
+			"category": "フレームワーク",
+			"list": [
+				{
+					"name": "Spring Boot[Java]",
+					"level": 4
+				},
+				{
+					"name": "Bootstrap[CSS]",
+					"level": 3
+				},
+				{
+					"name": "Vue[JS]",
+					"level": 4
+				}
+			]
+		},
+		{
+			"category": "ツール・その他",
+			"list": [
+				{
+					"name": "Git, SVN",
+					"level": 4
+				},
+				{
+					"name": "GCP, AWS",
+					"level": 3
+				},
+				{
+					"name": "Redmine, Backlog",
+					"level": 3
+				},
+				{
+					"name": "Slack, Microsoft Teams",
+					"level": 4
+				},
+				{
+					"name": "Eclipse, VSCode",
+					"level": 4
+				}
+			]
+		},
+		{
+			"category": "業務範囲",
+			"list": [
+				{
+					"name": "要件定義",
+					"level": 2
+				},
+				{
+					"name": "基本設計",
+					"level": 3
+				},
+				{
+					"name": "詳細設計",
+					"level": 3
+				},
+				{
+					"name": "製造",
+					"level": 5
+				},
+				{
+					"name": "テスト",
+					"level": 4
+				},
+				{
+					"name": "運用保守",
+					"level": 5
+				}
+			]
+		}
+	],
+	"work": [
+		{
+			"title": "ポートフォリオ",
+			"img": "work_forio.svg",
+			"url": "https://github.com/gitty12-dev/forio",
+			"detail": "このポートフォリオサイトのGitHubページになります。Vue.jsメインで作成しました。"
+		},
+		{
+			"title": "Todoアプリ",
+			"img": "work_todo.png",
+			"url": "https://docs.google.com/spreadsheets/d/1URgeLmnpjEctlL-u-IfeGoayD4MrbxL73mviRlK7eoU/edit?usp=sharing",
+			"detail": "Google App Spreadsheetsを用いて作成したTodo管理アプリです。(PCのみスクリプト実行可能)"
+		},
+		{
+			"title": "Slack Clone",
+			"img": "work_slack.svg",
+			"url": "https://www.google.com/",
+			"detail": "現在作成中(URLはgoogleに遷移)。Google FirebaseのRealtime DatabaseとAuthorization機能を用いて作成しています。"
+		}
+	]
 }
