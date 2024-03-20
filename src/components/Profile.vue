@@ -14,10 +14,9 @@ defineProps<{ job: string }>()
 			</div>
 			<div class="my-detail-div d-flex flex-column">
 				<span class="fs-5 pb-1"> 職業：{{ job }} </span>
-				<p>はじめまして、システムエンジニアの"Gitty"と申します。IT業界での社会人歴は5年目です。<br>
+				<p>はじめまして、システムエンジニアの"Gitty"と申します。IT業界での社会人歴は6年目です。<br>
 					新卒では中小企業の受託開発企業に入社し、現在は準委任契約で案件をいただき、
 					設計～開発・運用保守など幅広いITスキルを基に、フルスタックエンジニアを目指して日々精進しております。
-					(2022年12月6日更新)
 				</p>
 				<div class="my-tech-list">
 					<div v-for='tech in techs' class="my-tech">
